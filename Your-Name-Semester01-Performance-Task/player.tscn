@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg23ckt6lec6f"]
+[gd_scene load_steps=5 format=3 uid="uid://cg23ckt6lec6f"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_ae80h"]
 [ext_resource type="Texture2D" uid="uid://vs551jdj25r0" path="res://assets/player.png" id="2_yi372"]
+[ext_resource type="PackedScene" uid="uid://2i30umm5roa0" path="res://extra_cedit_one.tscn" id="3_xacol"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cy25u"]
 size = Vector2(291, 273)
@@ -15,5 +16,7 @@ texture = ExtResource("2_yi372")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1.5)
 shape = SubResource("RectangleShape2D_cy25u")
+
+[node name="extra cedit one" parent="." instance=ExtResource("3_xacol")]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

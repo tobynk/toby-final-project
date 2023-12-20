@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://2i30umm5roa0"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_juc8n"]
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 0.01
+particle_flag_disable_z = true
+spread = 27.0
+flatness = 0.16
+gravity = Vector3(2.08165e-12, 100, 2.08165e-12)
+initial_velocity_max = 715.79
+orbit_velocity_min = 2.08167e-14
+orbit_velocity_max = 2.08167e-14
+scale_min = 0.0
+scale_max = 5.0
+
+[node name="extra cedit one" type="GPUParticles2D"]
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_juc8n")
+trail_lifetime = 4.0

@@ -1,3 +1,0 @@
-[gd_scene format=3 uid="uid://cekef8yh0vgfe"]
-
-[node name="follow player" type="GPUParticles2D"]
