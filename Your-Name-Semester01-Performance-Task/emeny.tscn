@@ -6,6 +6,7 @@
 size = Vector2(729, 1030)
 
 [node name="emeny" type="RigidBody2D"]
+gravity_scale = 2.66454e-15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2.5, 21)
