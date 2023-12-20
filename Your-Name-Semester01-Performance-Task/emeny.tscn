@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cphpwakuplbgt"]
+
+[ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_ehql5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptg0g"]
+size = Vector2(729, 1030)
+
+[node name="emeny" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, 21)
+shape = SubResource("RectangleShape2D_ptg0g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ehql5")
